@@ -35,6 +35,8 @@ Simple Excel reader
 
 #Vypracovanie 
 
+Kod ma malo komentarov ale je celkom jednoduchy na navigovanie sa
+
 Zadanie som pochopil ze treba nacitat excel subor-> najst hodnotu v stlpci-> vypisat kde v stlpci sa hodnota nachadza
 
 a moznost vyexportovat dane hodnoty(True False, zalezi ci sa v riadku hodnota nachadza alebo nie).
