@@ -1,0 +1,26 @@
+   Elements    Area  ... Is element Located inside or at platform?  Operating Area
+0        AC1  Depot  ...                                       NaN           OA-02
+1       S101  Depot  ...                                        No           OA-02
+2       T101  Depot  ...                                       NaN           OA-02
+3      T101A  Depot  ...                                        No           OA-02
+4      T101B  Depot  ...                                        No           OA-02
+5      AC102  Depot  ...                                       NaN           OA-02
+6       S102  Depot  ...                                        No           OA-02
+7       T102  Depot  ...                                       NaN           OA-02
+8     SW101*  Depot  ...                                        No           OA-02
+9      AC103  Depot  ...                                       NaN           OA-02
+10      S103  Depot  ...                                        No           OA-02
+11      T103  Depot  ...                                       NaN           OA-02
+12     T103A  Depot  ...                                       NaN           OA-02
+13     T103B  Depot  ...                                       NaN           OA-02
+14     T103C  Depot  ...                                       NaN           OA-02
+15     T103D  Depot  ...                                       NaN           OA-02
+16     T103E  Depot  ...                                       NaN           OA-02
+17     T103F  Depot  ...                                       NaN           OA-02
+18     T103G  Depot  ...                                       NaN           OA-02
+19     T103H  Depot  ...                                       NaN           OA-02
+20     T103I  Depot  ...                                       NaN           OA-02
+21     AC104  Depot  ...                                       NaN           OA-02
+22      S104  Depot  ...                                        No           OA-02
+
+[23 rows x 21 columns]
