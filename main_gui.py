@@ -9,7 +9,7 @@ from kivymd.uix.card import MDCard
 import pandas as pd
 #C:\Users\andre\Desktop\siemens\zadanie_data.xlsx
 class MWSIEMENS(MDApp):
-
+    #reset search funkcie, zobrazi cely excel subor
     def show_raw(self, *args):
         self.search_var = False
         screen.remove_widget(self.collumn_name)
@@ -50,6 +50,7 @@ class MWSIEMENS(MDApp):
         screen.add_widget(self.main_card)
         screen.add_widget(self.collumn_name)
         screen.add_widget(self.value_name)
+    #search funkcia, na obrazovke budu cisla riadkov a True/False hodnota zalezi ci sa v riadku nachadza ziadany vyrok
     def search_for_coll(self, *args):
         self.search_var = True
         self.search = self.data[str(self.collumn_name.text)]
@@ -93,6 +94,7 @@ class MWSIEMENS(MDApp):
         screen.add_widget(self.main_card)
         screen.add_widget(self.collumn_name)
         screen.add_widget(self.value_name)
+    #otvori a zobrazi cely excel subor
     def open_xlsx(self, *args):
         self.search_var = False
         #self.data_head = pd.read_excel(str(self.file_input.text)).split("\n")[0]
@@ -144,12 +146,14 @@ class MWSIEMENS(MDApp):
         screen.add_widget(self.main_card)
         screen.add_widget(self.collumn_name)
         screen.add_widget(self.apply_search)
+    #funkcia exportuje to co je na obrazovke
     def export(self, *args):
         #self.export_data = self.data[f"{self.collumn_name.text}"] == f"{self.value_name.text}"
         self.export_data = self.card_text.text
         with open(f"{str(self.export_name.text)}.mwexport", "w+") as exp:
             exp.write(str(self.export_data))
             exp.close()
+    #zakladna obrazovka, pyta si .xlsx subor
     def build(self):
         self.theme_cls.theme_style = "Dark"
         self.theme_cls.primary_palette = "DeepPurple"
